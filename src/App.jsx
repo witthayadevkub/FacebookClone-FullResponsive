@@ -11,24 +11,40 @@ import { Data } from './DataUser/DataUser'
 export const DataUser = createContext()
 
 
+
 function App() {
 
   
+ 
 
   return (
     <DataUser.Provider value={Data}>
 
         <div className="size">
-          <header>
+         <header>
             <Navbar/>
-            <Mind/>
-          </header>
+         </header>   
     
-          <section>
-            <AddStory/>
-            <Post/>
-          </section>
+          <div className="layoutmain">
+
+            <div className="contentlift">
+              content-lift
+            </div>
+            <div className="contentmain">
+              <Mind/>
+              <AddStory/>
+              <Post/>
+            </div>
+            <div className="contentright">
+              content-right
+            </div>
+          </div>
+
+
         </div>
+           
+        
+
         
     </DataUser.Provider>
   )

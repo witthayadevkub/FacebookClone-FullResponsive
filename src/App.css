@@ -1,8 +1,48 @@
-.size{
+/* .size{
     
-    width: 375px;
-    margin: 0 auto;
-    height: 667px;
+    
 
+} */
+
+
+.size{
+
+   
+.layoutmain{ 
+    
+   .contentmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+    .contentlift{
+      display: none;
+    }
+    .contentright{
+      display: none;
+    }
+
+   
+
+   
+}
+ @media screen and (min-width: 1060px) {
+
+    .layoutmain{
+    display: grid;
+    grid-template-columns: auto 30% auto;
+.contentlift{
+      display: block;
+      border: 1px solid red;
+
+    }
+    .contentright{
+      display: block;
+      border: 1px solid red;
+    }
+    }
+    
+
+}
 }
 
