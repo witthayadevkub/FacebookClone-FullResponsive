@@ -19,19 +19,13 @@ import { GrGroup } from "react-icons/gr";
 import { AiTwotoneShop } from "react-icons/ai";
 
 const Navbar = () => {
-
     const [alart, setAlart] = useState({
-
         chat:1,
         friends:0,
         video:9,
         notification:10,
         community:0,
-
     })
-
-
-    // setAlartChat(1)
 
   return (
     <div className='layoutnav'>
@@ -49,12 +43,10 @@ const Navbar = () => {
                             <FaBars/>
                             </div>
                         </div>
-
             </div>  
 
             <div className="menu">
-                <div className="home">
-                    
+                <div className="home">           
                     <i><TiHome/></i>
                     <p></p>
                 </div>
@@ -64,8 +56,7 @@ const Navbar = () => {
                    <i >  <IoPeopleOutline /> </i>
                     <p>{alart.friends}</p>
                 </div>
-                : <i >  <IoPeopleOutline /> </i>}
-                
+                : <i >  <IoPeopleOutline /> </i>}     
 
                 {alart.chat !== 0 ? 
                 <div className="box-icon">
@@ -81,7 +72,6 @@ const Navbar = () => {
                 </div>
                 : <i><MdOndemandVideo/></i>}
                 
-
                 {alart.notification !== 0 ? 
                 <div className="box-icon">
                     <i><IoNotificationsOutline/></i>
@@ -89,7 +79,6 @@ const Navbar = () => {
                 </div>
                 : <i><IoNotificationsOutline/></i>}
                 
-
                 {alart.community != 0 ? 
                 <div className="box-icon">
                     <i className="fa-solid fa-users-rectangle" ></i>
@@ -100,19 +89,18 @@ const Navbar = () => {
             </div>          
         </nav>
 
-
 <div className="layout2">
     <div className="flex">
         <div className="logo">
             <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png" alt="" />
             <div className="input">
                 <i><FaSearch /></i>
-                <input type="text" id="mind" name="mind" placeholder="What's on your mind???"  ></input>
+                <input type="text" id="mind" name="mind" placeholder="Search Facebook"></input>
             </div>
         </div>
         <div className="manu">
             <div className="icon active">
-                <i><GoHomeFill /></i>
+                <i className='iblue'><GoHomeFill /></i>
             </div>
             <div className="icon">
                 <i><MdOndemandVideo/></i>
@@ -153,8 +141,7 @@ const Navbar = () => {
                     </div>
         </div>
     </div>
-</div>
-          
+</div>         
         
     </div>
   )

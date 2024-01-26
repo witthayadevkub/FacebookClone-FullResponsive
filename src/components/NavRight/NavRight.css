@@ -1,0 +1,130 @@
+.navright{
+
+    position: fixed;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    display:grid;
+    grid-template-rows:40% 10% 50%;
+    color: rgb(51, 51, 51);
+    padding: 10px;
+    margin-right: 10px;
+    .iconbottom{
+        background-color: #ffffff;
+        width:60px; height:60px;
+        position:fixed;
+        bottom:35px;
+        right:40px;
+        border-radius:50%;
+
+        display:flex;
+        align-items: center;
+        justify-content:center; 
+
+        i{ 
+            width:30px; height:30px;
+            font-size: 30px;
+        }
+        
+    }
+    .sponsored{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+
+        span{
+            font-size: 20px;
+        }
+        .conspon{
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+           
+        img{
+             width: 150px; 
+             height: 150px;
+             border-radius: 10px;
+             object-fit: cover;
+            }
+            
+        }
+    }
+
+    .birthdays{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid rgb(167, 161, 161);
+        .img{
+            height: 36px;
+            width: 36px;
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/tIgTWaivCoy.png?_nc_eui2=AeG4r6mgy_6tOjiMCq484rl7s_Sg92Yk1mez9KD3ZiTWZ-cPJMihzxzvm_I7HbUMOI0HBBc8lxe5wluG5hnx2TNA);
+            background-position: 0 0;
+            background-size: 38px 56px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+    }
+
+    .topcotacts{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid #a7a1a1;
+        p{
+            color: #535455;
+            font-weight: 600;
+        }
+
+        i{
+            color: #535455;
+        }
+
+       
+    }
+
+     .user{
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            gap:10px;
+            p{
+                color: #000000;
+            }
+            .img{
+                    height: 36px;
+                    width: 36px;
+                    position: relative;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    border-radius: 50%;
+                p{
+                    width: 8px;
+                    height: 8px;
+                    background-color: #16a32e;
+                    border: 2px solid #ffffff;
+                    border-radius: 50%;
+                    z-index: 100;
+                    position: absolute;
+                    right: -2px;
+                    bottom: -17px;
+                }
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit:cover;
+                    
+                }
+            }
+            
+           
+        }
+
+        .user:hover,.birthdays:hover, .conspon:hover{
+             background: linear-gradient(to right, #dfe1e2, #d8e0e7);
+            border-radius: 10px;
+        }
+}

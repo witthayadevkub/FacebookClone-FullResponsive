@@ -1,0 +1,125 @@
+
+
+.leftNav::-webkit-scrollbar{
+    width: 10px;
+    
+}
+.leftNav::-webkit-scrollbar-thumb{
+    background-color: rgb(197, 202, 202);
+    border-radius: 10px;
+    display: none;
+}    
+
+
+.leftNav{
+
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    position: fixed;
+    
+  
+    overflow-y: auto;
+    height: 90%;
+    
+    .navbox{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding-top: 5px;
+             
+            span{
+                margin-left: 15px;
+            }
+            .img{
+                 background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png?_nc_eui2=AeGLmQow-myZL00k5Vn3yaxziXYVTRy2fzKJdhVNHLZ_Mogfzp0fEWrZi5LTH4uBAhknKv-SY9xx74WhrPgR1Pp6);
+                background-size: auto;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+               
+            }
+            .Friend{
+                background-position: 0 -296px; 
+            }
+            .Memories{
+                background-position: 0 -444px;
+            }
+            .Saved{
+                background-position: 0 -185px;
+            }
+            .Groups{
+                background-position: 0 -37px;
+            }
+            .Video{
+                background-position: 0 -518px;
+            }
+            .Marketplace{
+                background-position: 0 -407px;
+            }
+            .Feeds{
+                background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/eECk3ceTaHJ.png?_nc_eui2=AeF1C0g_HvoaUJu6LcxETQ0mi9AM8exRZGeL0Azx7FFkZ6VbxnVlq3Cr0vly0SDmms-2Azt_cGYDbmB-WKrSlzV2');
+            }
+            .Seemore, .Seeless{
+                background-color: #dde0e2;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .Seeless{
+               transform: rotate(180deg); 
+            }
+         
+    }
+   .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  img{
+        margin-left: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+   }  
+  } 
+  .forborder-bottom{
+    border-bottom: 1px solid #d0d3d4;
+  }
+}
+
+
+.navbox:hover{ 
+    background: linear-gradient(to right, #dfe1e2, #d8e0e7);
+    border-radius: 10px;
+
+}
+
+
+.shortcuts{
+overflow: hidden;
+width: 100%;
+margin-left: 15px;
+margin-top: 15px;
+    
+    .boxcut{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+    }
+}
+
+

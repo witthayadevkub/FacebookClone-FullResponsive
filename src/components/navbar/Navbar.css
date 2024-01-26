@@ -1,6 +1,6 @@
 .layoutnav{
-background-color: #e40808;
-  @media screen and (min-width: 1060px) {
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 900px) {
     .layout1{
       display: none;
     }
@@ -19,9 +19,6 @@ background-color: #e40808;
   .flex{
     padding: 0 15px;
     height: 56px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -34,23 +31,32 @@ background-color: #e40808;
         justify-content: start;
 
         .input{
-        /* width: 240px; */
         display: flex;
         align-items: center;
-       background-color: #e9eff5; 
-       border-radius:  30px;
+        background-color: #e9eff5; 
+        border-radius:  30px;
 
        i{
-        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #818080; 
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+
        }
         input{
+          @media screen and (min-width: 1260px){
+          display: block;
+        }
+        display: none;
+        font-size: 1rem;
         text-align: start;
          width: 212px;
         height: 40px;
         background-color: #e9eff5; 
         color: #000000; 
-        /* padding: 8px;  */
         border: none;
         outline: none;
         border-radius: 30px;
@@ -59,18 +65,21 @@ background-color: #e40808;
       img{
         width: 40px;
         height: 40px;
+        margin-right: 5px;
       }
     }
 
     .manu{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
 
       .active{
         height: 100%;
-        color: #0866FF;
         border-bottom: 3px solid #0866FF;
+        .iblue{
+          color: #0866FF;
+        }
       }
 
       .icon{
@@ -79,7 +88,8 @@ background-color: #e40808;
        align-items: center;
        width: 112px;
         i{
-          font-size: 25px;
+          font-size: 2rem;
+          color: #818080;
           
         }
       }
@@ -155,10 +165,9 @@ background-color: #e40808;
   .logo{
       
    img{
-  
     margin-left: 10px;
     /* display:none; */
-    width:40%;
+    width:30%;
     height: 30%;
    }
      
@@ -170,12 +179,9 @@ background-color: #e40808;
     ;
  
      .iconNav{
-      /* width: 50px;
-      height: 50px; */
       margin: 5px 0;
       border: 9px solid #e9eff5;
       margin-right: 0.5rem;
-      /* padding: 0.7rem; */
       background-color:#e9eff5;
       border-radius:50%;
       font-size:1.3rem;

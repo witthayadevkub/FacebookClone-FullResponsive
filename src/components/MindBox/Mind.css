@@ -1,5 +1,9 @@
 
 .box{
+
+    @media screen and (min-width: 1000px){
+        display: none;
+    }
     margin-top: 3px;
     padding-top: 7px;
     padding-bottom: 7px;

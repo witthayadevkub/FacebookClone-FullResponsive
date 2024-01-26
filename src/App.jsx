@@ -8,14 +8,17 @@ import Post from './components/PostUser/Post'
 import './App.css'
 //data
 import { Data } from './DataUser/DataUser'
+// import ImageSlider from './components/slider/slider'
+import NavLift from './components/NavLeft/NavLeft'
+import NavRight from './components/NavRight/NavRight'
+import Mindtwo from './components/MindBox/Mindtwo'
+// import SliderComponent from './components/slider/slider'
 export const DataUser = createContext()
 
 
 
 function App() {
 
-  
- 
 
   return (
     <DataUser.Provider value={Data}>
@@ -28,22 +31,23 @@ function App() {
           <div className="layoutmain">
 
             <div className="contentlift">
-              content-lift
+              <NavLift/>
             </div>
             <div className="contentmain">
               <Mind/>
               <AddStory/>
+              <Mindtwo/>
               <Post/>
             </div>
             <div className="contentright">
-              content-right
+              <NavRight/>
             </div>
           </div>
 
 
         </div>
            
-        
+
 
         
     </DataUser.Provider>
@@ -51,3 +55,8 @@ function App() {
 }
 
 export default App
+
+
+
+
+

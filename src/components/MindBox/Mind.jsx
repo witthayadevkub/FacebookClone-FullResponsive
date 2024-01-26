@@ -19,7 +19,7 @@ const Mind = () => {
         </div>
 
         <div className="input">
-            <input type="text" id="mind" name="mind" placeholder="What's on your mind???"  onChange={handleChange} ></input>
+            <input type="text" id="mind" name="mind" placeholder="What's on your mind?"  onChange={handleChange} ></input>
         </div>
 
         <div className="photo">

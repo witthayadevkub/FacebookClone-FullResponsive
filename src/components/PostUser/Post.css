@@ -1,23 +1,49 @@
 .postBox{
     margin-top: 7px;
-   
-
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
     i{
         color:#a4a5a7;
     }
 
     .headpost{
-        background-color: #ffffff;
+        
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 8px;
 
-        img{
-            width: 50px;
-            height: 50px;
+        .poststatus{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        i{
+            font-size: 2rem;
+        }
+        .border{
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            background-color: #ffffff;
+            border: 3px solid #0b16b1;
+            border-radius: 50%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            img{
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             object-fit: cover;
+        }
+        
+            
     }
     }
 
@@ -28,11 +54,11 @@
            width: 100%; 
            height: 100%;
             object-fit: cover;
+            border-radius: 10px;
         }
     }
     .textpost{
         padding: 8px;
-        background-color: #ffffff;
         overflow: hidden;
         word-wrap: break-word;
         span{
@@ -41,14 +67,13 @@
     }
     .buttonpost{
         padding-top: 5px;
-        background-color: #ffffff;
         margin-bottom: 5px;
         .layout-emoji{
             display: flex;
-            .emoji{
+            margin: 5px 0;
+            .emoji{  
                  img{      
                         width: 20px;
-                        border: 1px solid #ffffff;
                         height: auto;
                         }
                 }
@@ -66,8 +91,30 @@
         
         
         .community{
-           
+                @media screen and (min-width: 900px){
+                   border-top: 1px solid #c0c3c5;
+
+                   span{
+                    display: none;
+                   }
+                   
+                   
+                }
+                p{
+                    display: none;
+                    font-weight: 600;
+                    text-align: center;
+                    color: #746969;
+                   }
+               
             .con{ 
+
+                @media screen and (min-width: 900px){
+                   background-color:#ffffff; 
+                   p{
+                     display:block;
+                   }
+                }
                 position: relative;
                 display: flex;
                 justify-content: center;

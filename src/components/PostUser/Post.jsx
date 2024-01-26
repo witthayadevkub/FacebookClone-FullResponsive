@@ -24,15 +24,22 @@ const Post = () => {
     }
 
   return (  
-        <div className='postBox'>
+        <div >
             {usersWithPosts.map((post, index) => (
-                <div key={index}>
+                <div  key={index}>
                     
                         {post.post?.map((post, index) => (
-                            <div key={index}>
+                            <div className='postBox' key={index}>
                                 <div className='headpost'>
-                                    <img src={post.userphoto} alt={post.name} />
+                                    
+                                    <div className='poststatus'>
+                                        <div className="border">
+                                        <img src={post.userphoto} alt={post.name} />
+                                    </div>
                                     <h3>{post.name}</h3>
+                                    </div>
+                                    
+                                    
                                     <i className="material-icons">more_horiz</i>
                                 </div>
                                
@@ -82,15 +89,18 @@ const Post = () => {
                                    <div className="community">
                                         <div className='con'>
                                             <i><AiOutlineLike /></i>
-                                            <span>{post.reaction?.reduce((accumulator, reaction) => accumulator + reaction?.count , 0)}</span>    
+                                            <span>{post.reaction?.reduce((accumulator, reaction) => accumulator + reaction?.count , 0)}</span>  
+                                            <p>Like</p>  
                                         </div>
                                         <div className='con'>
                                             <i><GoComment /></i>
-                                            <span>{post.comment}</span>   
+                                            <span>{post.comment}</span> 
+                                            <p>Comment</p>  
                                         </div>
                                         <div className='con'>
                                             <i><PiShareFatLight /></i>
                                             <span>{post.sharecount}</span>
+                                            <p>Share</p>
                                         </div>
                                    </div>
                                 </div> 
