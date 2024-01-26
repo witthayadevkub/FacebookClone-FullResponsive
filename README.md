@@ -1,10 +1,17 @@
-# Frontend Project: Facebook Interface Clone (Mobile Responsive)
-https://clone-interface-frontend-facebook.vercel.app/
-# Overview:
-# This project aims to replicate the Facebook interface, focusing on mobile responsiveness.
+# Frontend Project: Facebook Interface Clone (Full-Responsive)
+https://facebook-clone-full-responsive.vercel.app
+
+#Overview
+            Welcome to the Facebook Interface Clone project! This project aims to recreate the user interface of the popular social media platform Facebook,
+            with a focus on achieving a fully responsive design. By engaging in this project, you'll have the opportunity to enhance your frontend development skills, particularly in HTML, CSS, and JavaScript.
+
+#Features
+            Full-Responsive Design: The clone is designed to work seamlessly across various devices and screen sizes, providing an optimal user experience whether accessed on a desktop, tablet, or mobile device.
+
+            Accurate UI Replication: The project prioritizes an accurate reproduction of Facebook's user interface, including the layout of the news feed, profile section, friend requests, and more.
 
 # Data posts and stories from an array like this >>>
-const Data = [{
+            const Data = [{
             name: profileUser1.name,
             userphoto: profileUser1.img,
             storyImg: '',
